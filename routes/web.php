@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/user/{id}', 'UsersController@getUserComments');
+
+Route::get('/createComment', function (){
+    return view('create-comment');
 });
+
+Route::post('/createComment','UsersController@createPostUserComment');

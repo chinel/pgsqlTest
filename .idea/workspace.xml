@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0be57d3c-e329-4942-9a71-a9ecf96060f1" name="Default Changelist" comment="" />
+    <list default="true" id="0be57d3c-e329-4942-9a71-a9ecf96060f1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/resources/views/create-comment.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create-comment.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,8 +63,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/create-comment.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="320">
+              <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
             </state>
           </provider>
         </entry>
@@ -125,6 +127,7 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/routes/api.php" />
+        <option value="$PROJECT_DIR$/resources/views/create-comment.blade.php" />
       </list>
     </option>
   </component>
@@ -352,12 +355,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574273858206</updated>
-      <workItem from="1574273864834" duration="1907000" />
+      <workItem from="1574273864834" duration="1956000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1907000" />
+    <option name="totallyTimeSpent" value="1956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="275" y="2" width="1096" height="733" extended-state="0" />
@@ -481,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/create-comment.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="320">
+          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
         </state>
       </provider>
     </entry>

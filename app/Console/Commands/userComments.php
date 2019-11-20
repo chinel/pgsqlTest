@@ -37,6 +37,22 @@ class userComments extends Command
      */
     public function handle()
     {
-        //
+        $userID = $this->argument('userId');
+        $comment = $this->argument('comments');
+
+        $this->info("Please more than one comment should be separated with commas");
+        if ($this->confirm('Do you wish to continue? [y|N]')) {
+            $findUser = User::find($userID);
+
+            if(!empty($findUser)){
+                $findUser->comments .= $comment;
+                $findUser->save();
+                $this->info("comment successfully added");
+
+            }else{
+                $this->info("user not found");
+            }
+
+        }
     }
 }

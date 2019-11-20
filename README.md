@@ -4,7 +4,7 @@
 
 -Secondly you need to migrate the tables and seeder file
 
--Then run the project using which ever format you want, whether "php artisan serve" or "php -s Localhost:9099 -t public"
+-Then run the project using which ever format you want, whether "php artisan serve" or "php -S Localhost:9099 -t public"
 
 -As long as you have run the db seed file you can access the users comments page using "http://localhost:9099/user/1" for example
 

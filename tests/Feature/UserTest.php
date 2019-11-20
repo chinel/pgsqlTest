@@ -34,4 +34,30 @@ class UserTest extends TestCase
                     ]]
             );
     }
+    
+
+    /**
+     * This feature test ensures that comments are appended to an exiting users comment
+     *
+     */
+
+    public function testJsonCommentIsCreatedSuccessfully()
+    {
+
+
+        $payload = [
+            'id' => 1,
+            'password' => 'testinpass',
+            'comments' => 'Am just testing'
+        ];
+
+        $response = $this->json('POST', 'api/createComment', $payload)
+            ->assertStatus(201)
+            ->assertJson([
+                'success' => 'comment successfully added'
+
+            ]);
+
+
+    }
 }

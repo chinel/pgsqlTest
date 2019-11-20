@@ -34,7 +34,7 @@ class UserTest extends TestCase
                     ]]
             );
     }
-    
+
 
     /**
      * This feature test ensures that comments are appended to an exiting users comment

@@ -9,14 +9,29 @@ use Tests\TestCase;
 class UserTest extends TestCase
 {
     /**
-     * A basic feature test example.
+     * This feature test ensures that comment, id and password is provided
+     *  when a json post request is made
      *
-     * @return void
      */
-    public function testExample()
+    public function testJsonRequiresIdCommentAndPassword()
     {
-        $response = $this->get('/');
+        $this->json('POST', 'api/createComment')
+            ->assertStatus(422)
+            ->assertJson(
+                [
+                    "message" => "The given data was invalid.",
+                    "errors" => [
+                        "id" => [
+                            "The id field is required."
+                        ],
+                        "password" => [
+                            "The password field is required."
+                        ],
+                        "comments" => [
+                            "The comments field is required."
+                        ]
 
-        $response->assertStatus(200);
+                    ]]
+            );
     }
 }

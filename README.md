@@ -16,7 +16,7 @@
 
 -There is also a custom artisan command create to allow you to create user comments from the command line
 
--You can as well run that command using ">php artisan add:comment 1 hello" where "1" is the id of the user and "hello" is the comment
+-You can as well run that command using "php artisan add:comment 1 hello" where "1" is the id of the user and "hello" is the comment
 
 
 ## ENJOY

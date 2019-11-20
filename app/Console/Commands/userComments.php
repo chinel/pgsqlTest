@@ -11,14 +11,14 @@ class userComments extends Command
      *
      * @var string
      */
-    protected $signature = 'command:name';
+    protected $signature = 'add:comment {userId} {comments}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Add user comment to database';
 
     /**
      * Create a new command instance.

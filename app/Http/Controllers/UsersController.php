@@ -34,4 +34,21 @@ class UsersController extends Controller
             return redirect()->back()->with(['error' => 'Invalid User']);
         }
     }
+
+    /*
+   * Function to handle json post request and returns 404 if not found
+   * */
+    public function createJsonUserComment(CommentsRequest $request){
+        $findUser = User::find($request->id);
+
+        if(!empty($findUser)){
+            $findUser->comments .= $request->comments;
+            $findUser->save();
+            return response()->json(['success' => 'comment successfully added'], 201);
+        }else{
+            return response()->json(['error' => 'user not found'], 404);
+        }
+
+
+    }
 }
